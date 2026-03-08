@@ -151,6 +151,7 @@ void drawResonanceIndicators() {
       translate(b.pos.x, b.pos.y);
       
       if (resonanceStates[idx] == 1) {
+        // RESONANCE INDICATOR - Yellow pulsing ring
         float pulse = sin(frameCount * 0.2 + i) * 5 + 25;
         strokeWeight(2);
         stroke(60, 100, 100, 80 + sin(frameCount * 0.3) * 20);

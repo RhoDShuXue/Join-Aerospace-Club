@@ -14,8 +14,8 @@ void createBody(int index) {
   
   float e = random(0.05, 0.2);
   float inc = random(-10, 10);
-  float argP = random(TWO_PI);
-  float lonNode = random(TWO_PI);
+  float argP = random(TWO_PI);        //ARGUMENT OF PERIHELION
+  float lonNode = random(TWO_PI);     //LONGITUDE OF NODE
   float trueAnomaly = random(TWO_PI);
   
   PVector pos = orbitToCartesian(a, e, inc, argP, lonNode, trueAnomaly);  
